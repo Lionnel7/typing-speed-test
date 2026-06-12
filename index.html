@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+
+        <div class="stats-header">
+            <div class="stat-box">Temps : <span id="timer">0s</span></div>
+            <div class="stat-box">WPM : <span id="live-wpm">0</span></div>
+        </div>
+
+        <div id="text-display" class="text-container"></div>
+
+        <textarea id="text-input" placeholder="Cliquez ici et commencez à taper pour lancer le test..." autofocus></textarea>
+
+        <button id="restart-btn">Recommencer</button>
+
+        <div id="result-screen" class="modal hidden">
+            <div class="modal-content">
+                <h2>Résultats</h2>
+                <div class="results-grid">
+                    <p>Vitesse : <strong id="final-wpm">0</strong> WPM</p>
+                    <p>Précision : <strong id="final-accuracy">0</strong>%</p>
+                    <p>Temps total : <strong id="final-time">0</strong>s</p>
+                </div>
+                <button id="close-result-btn">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
